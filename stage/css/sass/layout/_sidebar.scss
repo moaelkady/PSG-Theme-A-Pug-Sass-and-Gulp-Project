@@ -4,8 +4,29 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding: 15px;
-    background-color: #333;
-    color: #fff;
+    padding: 10px;
+    background-color: $flatBlackAlt;
+    color: $flatWhite;
     transition: 0.3s;
+    overflow: hidden;
+    .logo {
+        img {
+            width: 50px;
+            margin: 10px 0 20px;
+        }
+    }
+    .social {
+        ul {
+            list-style: none;
+            li {
+                a{
+                    color: $flatWhite;
+                    font-size: 1.5em;
+                    margin-bottom: 20px;
+                    border: 1px solid $flatWhite;
+                    width: 50%;
+                }
+            }
+        }
+    }
 }

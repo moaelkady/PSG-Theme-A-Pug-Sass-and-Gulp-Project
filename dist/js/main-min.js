@@ -1,1 +1,1 @@
-const mySet=new Set,myMap=new Map;
+$(".page .header ul li a").filter(function(){return this.href===location.href}).addClass("active");const myMap=new Map;
