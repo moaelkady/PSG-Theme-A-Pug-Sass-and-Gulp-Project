@@ -1,0 +1,4 @@
+# ignore node modules
+# kindly run npm i after cloning
+
+node_modules
