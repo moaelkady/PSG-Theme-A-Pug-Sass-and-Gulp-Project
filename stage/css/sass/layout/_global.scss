@@ -10,8 +10,12 @@ html {
 }
 .page {
     min-height: 100vh;
-
 }
 .active {
     color: $primary !important;
 }
+.clear-float {
+    clear: both;
+}
+
+@media screen and (max-width: 768px) {}

@@ -3,10 +3,10 @@
   float: right;
   border-top: 15px solid $flatBlack;
   border-bottom: 15px solid $flatBlack;
+  background: linear-gradient(90deg, $flatDark 50%, $flatDarkAlt 50%);
   display: flex;
   .heading {
     flex: 3;
-    background-color: $flatDark;
     height: 160px;
     display: flex;
     align-items: center;
@@ -22,25 +22,21 @@
       font-weight: bolder;
       overflow: visible;
       white-space: nowrap;
-      position: relative;
       span {
         margin-left: 50%;
         &::before {
           content: "";
-          display: block;
+          display: inline-block;
           width: 60px;
           height: 2px;
           background: $primary;
-          left: 15%;
-          top: 50%;
-          position: absolute;
+          margin: 0 20px 4px -110px;
         }
       }
     }
   }
   .button {
     flex: 2;
-    background-color: $flatDarkAlt;
     height: 160px;
     display: flex;
     justify-content: center;
@@ -86,5 +82,22 @@
     justify-content: center;
     line-height: 55px;
     font-size: 1.2em;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .order-banner {
+    width: 100%;
+    float: none;
+    display: block;
+    .button {
+      height: 70px;
+      justify-content: left;
+      align-items: unset;
+      a{
+        width: 30%;
+      }
+    }
   }
 }

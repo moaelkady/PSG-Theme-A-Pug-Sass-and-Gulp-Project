@@ -166,3 +166,63 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .page {
+    .footer {
+      width: 100%;
+      float: none;
+      display: block;
+      .left {
+        display: none;
+      }
+      .middle,
+      .right {
+        margin: 20px 10px 20px 3%;
+      }
+      .middle {
+        margin-bottom: 50px;
+        p,
+        form,
+        ul {
+          margin-left: 3%;
+        }
+        ul {
+          margin-top: 60px;
+        }
+        form {
+          position: unset;
+          
+          input[type="email"],
+          input[type="submit"] {
+            display: inline;
+            position: unset;
+          }
+          input[type="email"] {
+            width: 60%;
+          }
+          input[type="submit"] {
+            margin-left: -4px;
+            padding: 15px;
+          }
+        }
+        &::after {
+          content: "";
+          width: 80%;
+          display: block;
+          border: 1px solid $flatWhiteAlt;
+        }
+      }
+      .right {
+        p,
+        ul {
+          margin-left: 3%;
+        }
+      }
+    }
+    .footer-banner {
+      width: 100%;
+      float: none;
+    }
+  }
+}

@@ -19,4 +19,10 @@ $("#toTop").click(function () {
   $("html, body").animate({ scrollTop: 0 }, 1000);
 });
 
+//function for mobile menu
+
+$(".mobile-menu").click(function(){
+  $(".header ul").toggleClass('show');
+  $(".mobile-menu").toggleClass('bars-x');
+});
 const myMap = new Map;
