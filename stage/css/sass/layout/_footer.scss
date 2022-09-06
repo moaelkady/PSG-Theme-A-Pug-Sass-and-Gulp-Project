@@ -16,14 +16,13 @@
       position: relative;
       h3 {
         font-weight: 600;
-        font-size: 1.9em;
+        font-size: 4em;
         color: $flatWhiteAlt;
         text-transform: uppercase;
-        letter-spacing: 5px;
+        letter-spacing: 25px;
         position: absolute;
-        bottom: -25px;
-        left: 80px;
-        margin-left: -30px;
+        bottom: 0;
+        left: 40px;
         transform: rotate(270deg);
         transform-origin: 0 0;
       }
@@ -45,43 +44,109 @@
       }
     }
     .middle {
-        form {
-            position: relative;
-            width: 90%;
-            margin-top: 30px;
-            input[type="email"] {
-                position: absolute;
-                width: 70%;
-                top:0;
-                left: 0;
-                padding: 10px;
-                background-color: transparent;
-                border: 1px solid $primary;
-                font-weight: 600;
-                font-size: 1.1em;
-                &:focus-visible {
-                    border: 1px solid $flatBlue;
-                    border-radius: none;
-                    outline: none;
-                }
-            }
-            input[type="submit"] {
-                position: absolute;
-                width: 30%;
-                top: 0;
-                left: 70%;
-                padding: 14px;
-                background-color: $primary;
-                color: $flatWhite;
-                border: none;
-            }
+      margin-right: 50px;
+      form {
+        position: relative;
+        width: 90%;
+        margin-top: 55px;
+        input[type="email"] {
+          position: absolute;
+          width: 70%;
+          top: 0;
+          left: 0;
+          padding: 11.5px;
+          background-color: transparent;
+          border: 1px solid $primary;
+          font-weight: 400;
+          font-size: 1em;
+          color: $flatWhite;
+          &:focus-visible {
+            border: 1px solid $flatBlue;
+            border-radius: none;
+            outline: none;
+          }
         }
-        ul {
-            margin-top: 100px;
+        input[type="submit"] {
+          position: absolute;
+          width: 30%;
+          top: 0;
+          left: 70%;
+          padding: 14px;
+          background-color: $primary;
+          color: $flatWhite;
+          border: none;
+          cursor: pointer;
+          &:hover {
+            background-color: $primaryAlt;
+          }
         }
+      }
+      ul {
+        margin-top: 150px;
+        list-style: none;
+        color: $flatSilver;
+        li {
+          margin-bottom: 30px;
+          span {
+            i {
+              color: $primary;
+              font-size: 1.5em;
+              width: 30px;
+            }
+            a {
+              text-decoration: none;
+              color: $flatWhite;
+              &:hover {
+                color: $primary;
+              }
+            }
+          }
+          span.element {
+            font-weight: 600;
+            display: inline-block;
+            width: 73px;
+          }
+          span.description {
+            color: $flatWhite;
+          }
+        }
+      }
     }
     .right {
-      
+      ul {
+        list-style: none;
+        margin-top: 50px;
+        li {
+          margin-bottom: 50px;
+          span {
+          }
+          span.element {
+            color: $flatSilver;
+            font-weight: 600;
+            display: inline-block;
+            width: 120px;
+          }
+          span.description {
+            color: $flatWhite;
+            a {
+              text-decoration: none;
+              color: $flatWhite;
+              border: 1px solid $flatWhite;
+              display: inline-block;
+              text-align: center;
+              width: 35px;
+              height: 35px;
+              &:hover {
+                color: $primary;
+                border: 1px solid $primary;
+              }
+              i {
+                margin-top: 8px;
+              }
+            }
+          }
+        }
+      }
     }
   }
   .footer-banner {
@@ -98,6 +163,66 @@
     .copy {
       font-size: 1.1em;
       font-weight: bolder;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    .footer {
+      width: 100%;
+      float: none;
+      display: block;
+      .left {
+        display: none;
+      }
+      .middle,
+      .right {
+        margin: 20px 10px 20px 3%;
+      }
+      .middle {
+        margin-bottom: 50px;
+        p,
+        form,
+        ul {
+          margin-left: 3%;
+        }
+        ul {
+          margin-top: 60px;
+        }
+        form {
+          position: unset;
+          
+          input[type="email"],
+          input[type="submit"] {
+            display: inline;
+            position: unset;
+          }
+          input[type="email"] {
+            width: 60%;
+          }
+          input[type="submit"] {
+            margin-left: -4px;
+            padding: 15px;
+          }
+        }
+        &::after {
+          content: "";
+          width: 80%;
+          display: block;
+          border: 1px solid $flatWhiteAlt;
+        }
+      }
+      .right {
+        p,
+        ul {
+          margin-left: 3%;
+        }
+      }
+    }
+    .footer-banner {
+      width: 100%;
+      float: none;
     }
   }
 }
