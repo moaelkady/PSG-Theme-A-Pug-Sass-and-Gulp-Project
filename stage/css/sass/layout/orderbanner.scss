@@ -1,0 +1,90 @@
+.order-banner {
+  width: calc(100% - 70px);
+  float: right;
+  border-top: 15px solid $flatBlack;
+  border-bottom: 15px solid $flatBlack;
+  display: flex;
+  .heading {
+    flex: 3;
+    background-color: $flatDark;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    h3 {
+      color: $flatGray;
+      background-color: $flatDarkAlt;
+      width: 50%;
+      padding: 15px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      letter-spacing: 2px;
+      font-weight: bolder;
+      overflow: visible;
+      white-space: nowrap;
+      position: relative;
+      span {
+        margin-left: 50%;
+        &::before {
+          content: "";
+          display: block;
+          width: 60px;
+          height: 2px;
+          background: $primary;
+          left: 15%;
+          top: 50%;
+          position: absolute;
+        }
+      }
+    }
+  }
+  .button {
+    flex: 2;
+    background-color: $flatDarkAlt;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      width: 50%;
+      height: 50px;
+      background-color: $primary;
+      color: $flatWhite;
+      border-radius: 2px;
+      text-align: center;
+      &:hover {
+        background-color: $primaryAlt;
+        border-radius: 4px;
+        span {
+          letter-spacing: 3px;
+        }
+      }
+      span {
+        line-height: 49px;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+#toTop {
+  position: fixed;
+  top: 87%;
+  right: 3%;
+  background-color: $primary;
+  width: 45px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 2px;
+  i{
+    color: $flatWhite;
+    display: flex;
+    justify-content: center;
+    line-height: 55px;
+    font-size: 1.2em;
+  }
+}
