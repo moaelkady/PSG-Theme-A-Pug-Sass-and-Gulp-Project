@@ -13,7 +13,7 @@
 }
 
 .active {
-  color: #FACA22 !important;
+  color: #ffc600 !important;
 }
 
 .page .header {
@@ -43,7 +43,7 @@
   font-size: 0.9em;
 }
 .page .header ul li a:hover {
-  color: #FACA22;
+  color: #ffc600;
 }
 
 .page .page-content {
@@ -88,8 +88,8 @@
   text-align: center;
 }
 .sidebar .social ul li a:hover {
-  color: #FACA22;
-  border: 1px solid #FACA22;
+  color: #ffc600;
+  border: 1px solid #ffc600;
 }
 
 .page .footer {
@@ -111,14 +111,13 @@
 }
 .page .footer .left h3 {
   font-weight: 600;
-  font-size: 1.9em;
-  color: rgba(255, 255, 255, 0.1882352941);
+  font-size: 4em;
+  color: rgba(255, 255, 255, 0.1411764706);
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 25px;
   position: absolute;
-  bottom: -25px;
-  left: 80px;
-  margin-left: -30px;
+  bottom: 0;
+  left: 40px;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   -webkit-transform-origin: 0 0;
@@ -144,10 +143,13 @@
   margin-bottom: 15px;
   width: 90%;
 }
+.page .footer .middle {
+  margin-right: 50px;
+}
 .page .footer .middle form {
   position: relative;
   width: 90%;
-  margin-top: 30px;
+  margin-top: 55px;
 }
 .page .footer .middle form input[type=email] {
   position: absolute;
@@ -156,7 +158,7 @@
   left: 0;
   padding: 10px;
   background-color: transparent;
-  border: 1px solid #FACA22;
+  border: 1px solid #ffc600;
   font-weight: 600;
   font-size: 1.1em;
 }
@@ -171,12 +173,73 @@
   top: 0;
   left: 70%;
   padding: 14px;
-  background-color: #FACA22;
+  background-color: #ffc600;
   color: #ffffff;
   border: none;
+  cursor: pointer;
+}
+.page .footer .middle form input[type=submit]:hover {
+  background-color: #fdd23d;
 }
 .page .footer .middle ul {
-  margin-top: 100px;
+  margin-top: 150px;
+  list-style: none;
+  color: #bdc3c7;
+}
+.page .footer .middle ul li {
+  margin-bottom: 30px;
+}
+.page .footer .middle ul li span i {
+  color: #ffc600;
+  font-size: 1.5em;
+  width: 30px;
+}
+.page .footer .middle ul li span a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.page .footer .middle ul li span a:hover {
+  color: #ffc600;
+}
+.page .footer .middle ul li span.element {
+  font-weight: 600;
+  display: inline-block;
+  width: 73px;
+}
+.page .footer .middle ul li span.description {
+  color: #ffffff;
+}
+.page .footer .right ul {
+  list-style: none;
+  margin-top: 50px;
+}
+.page .footer .right ul li {
+  margin-bottom: 50px;
+}
+.page .footer .right ul li span.element {
+  color: #bdc3c7;
+  font-weight: 600;
+  display: inline-block;
+  width: 120px;
+}
+.page .footer .right ul li span.description {
+  color: #ffffff;
+}
+.page .footer .right ul li span.description a {
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+}
+.page .footer .right ul li span.description a:hover {
+  color: #ffc600;
+  border: 1px solid #ffc600;
+}
+.page .footer .right ul li span.description a i {
+  margin-top: 8px;
 }
 .page .footer-banner {
   float: right;
