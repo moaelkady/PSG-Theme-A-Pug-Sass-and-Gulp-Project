@@ -177,37 +177,30 @@
       .section-three {
         margin: 30px 0;
         position: relative;
+        min-height: 100%;
+        background: linear-gradient(
+            90deg,
+            rgba(9, 3, 19, 0.658),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url("../src/facts.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 20px;
+        color: $flatWhite;
         .container {
-          min-height: 100%;
-          background: linear-gradient(
-              90deg,
-              rgba(9, 3, 19, 0.658),
-              rgba(0, 0, 0, 0.6)
-            ),
-            url("../src/facts.jpg");
-          background-size: cover;
-          background-attachment: fixed;
-          padding: 20px;
-          color: $flatWhite;
-          &::before {
-            position: absolute;
-            content: "";
-            display: inline-block;
-            margin: -20px 0 0 -20px;
-            border-radius: 0;
-            width: 40%;
-            height: 110%;
-            background-color: $flatDark;
-            border-radius: 5px;
-            margin-bottom: 30px;
-            z-index: 0;
-          }
+          background-color: $flatDark;
+          margin: -20px;
+          width: 45%;
+          white-space: nowrap;
+          padding: 40px;
           .head-container {
             h2 {
               text-transform: uppercase;
               font-weight: 900;
-              font-size: 1.6em;
-              letter-spacing: -2px;
+              font-size: 2em;
+              letter-spacing: -1px;
+              line-height: 2.2;
               &::before {
                 content: "";
                 display: block;
@@ -220,26 +213,145 @@
               &::after {
                 content: "";
                 display: block;
-                width: 8%;
+                width: 10%;
                 height: 1px;
                 background-color: $flatGrayAlt;
                 margin: 20px 0;
               }
             }
             p {
+              color: $flatSilver;
+              margin: 30px 0;
             }
           }
           .desc-container {
+            display: flex;
+            width: 270%;
+            padding: 10px 0;
             .element {
+              flex: 1;
               span {
+                font-size: 2em;
+                font-weight: 900;
+                display: block;
+                margin-bottom: 20px;
               }
               p {
+                display: block;
+                background-color: $flatDarkAltLight;
+                color: $flatSilver;
+                width: 80%;
+                padding: 10px;
+                text-transform: uppercase;
+                font-size: 0.9em;
+                letter-spacing: 1px;
+                position: relative;
+                &::before {
+                  position: absolute;
+                  content: "";
+                  display: inline-block;
+                  width: 12%;
+                  height: 2px;
+                  background-color: $primary;
+                  bottom: 16px;
+                  left: -30px;
+                }
               }
             }
           }
         }
       }
       .section-four {
+        padding: 30px;
+        .container {
+          .process-heading {
+            padding: 30px;
+            border-left: 4px solid $primary;
+            width: 80%;
+            margin-bottom: 20px;
+            h6 {
+              margin-bottom: 20px;
+              color: $flatBlack;
+              text-transform: capitalize;
+              &::after {
+                content: "";
+                display: block;
+                width: 5%;
+                border: 1px dashed $flatGrayAlt;
+              }
+            }
+            h1 {
+              text-transform: uppercase;
+              font-weight: 900;
+              margin-bottom: 30px;
+              letter-spacing: -1px;
+              color: $flatDark;
+              font-size: 2.1em;
+            }
+            p {
+              line-height: 1.3;
+              font-size: 0.9em;
+              color: $flatBlackLight;
+              font-weight: 600;
+            }
+          }
+          .process-desc {
+            display: flex;
+            .element {
+              margin-right: 15px;
+              flex: 1;
+
+              i {
+                display: inline-block;
+                margin-right: 10%;
+                font-size: 1.7em;
+              }
+              h3 {
+                display: inline-block;
+                background: $lightBG;
+                color: $flatDarkAlt;
+                font-weight: 600;
+                padding: 6px;
+                text-transform: capitalize;
+                font-size: 0.95em;
+                margin-bottom: 20px;
+              }
+              .box {
+                padding: 10px;
+                line-height: 1.7;
+                background-color: $flatDarkWhite;
+                color: $flatDarkAlt;
+                text-align: center;
+                font-size: 0.9em;
+                p {
+                  margin-bottom: 10px;
+                }
+                a {
+                  text-decoration: none;
+                  cursor: pointer;
+                  color: $flatWhite;
+                  background-color: $primary;
+                  padding: 8px;
+                  text-align: center;
+                  text-transform: uppercase;
+                  font-size: 0.8em;
+                  font-weight: 600;
+                  margin-left: 0;
+                  &:hover {
+                    letter-spacing: 1px;
+                    background-color: $primaryAlt;
+                  }
+                }
+              }
+            }
+          }
+          .process-footer {
+            p {
+            }
+            a {
+            }
+          }
+        }
       }
     }
   }
