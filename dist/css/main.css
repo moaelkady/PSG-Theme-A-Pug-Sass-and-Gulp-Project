@@ -101,11 +101,14 @@
     width: 25px;
   }
   .page .header .bars-x {
+    position: relative;
     top: -45px;
   }
   .page .header .bars-x .bar {
     width: 55px !important;
-    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    right: 8px;
   }
   .page .header .bars-x .bar:first-child {
     -webkit-transform: rotateZ(45deg);
@@ -776,7 +779,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 270%;
+  width: 250%;
   padding: 10px 0;
 }
 .page .page-content .home-view .section-three .container .desc-container .element {
@@ -942,5 +945,60 @@
 .page .page-content .home-view .section-four .container .process-footer a:hover {
   background-color: #fdd23d;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .page .page-content .home-view .section-two .container {
+    display: block;
+  }
+  .page .page-content .home-view .section-two .container .heading .img-container img {
+    width: 89%;
+  }
+  .page .page-content .home-view .section-two .container .description .desc-container .row {
+    display: block;
+  }
+  .page .page-content .home-view .section-three .container .head-container h2 {
+    font-size: 1.2em;
+  }
+  .page .page-content .home-view .section-three .container .head-container h2::before {
+    width: 40px;
+    height: 6px;
+  }
+  .page .page-content .home-view .section-three .container .head-container h2::after {
+    width: 70px;
+  }
+  .page .page-content .home-view .section-three .container .desc-container {
+    padding: 10px 40px;
+    display: block;
+  }
+  .page .page-content .home-view .section-three .container .desc-container .element {
+    margin-bottom: 30px;
+  }
+  .page .page-content .home-view .section-four .container .process-heading {
+    width: 100%;
+  }
+  .page .page-content .home-view .section-four .container .process-desc {
+    display: block;
+  }
+  .page .page-content .home-view .section-four .container .process-desc .element {
+    margin: 50px 0;
+  }
+  .page .page-content .home-view .section-four .container .process-desc .element i {
+    margin-right: 3%;
+    float: left;
+  }
+  .page .page-content .home-view .section-four .container .process-desc .element .box {
+    text-align: left;
+    line-height: 2;
+  }
+  .page .page-content .home-view .section-four .container .process-footer p,
+.page .page-content .home-view .section-four .container .process-footer a {
+    display: block;
+    margin-right: 0;
+  }
+  .page .page-content .home-view .section-four .container .process-footer a {
+    margin-top: 30px;
+    width: 40%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
