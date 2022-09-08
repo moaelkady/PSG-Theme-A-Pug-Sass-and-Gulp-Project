@@ -538,7 +538,7 @@
             align-items: unset;
   }
   .order-banner .button a {
-    width: 30%;
+    width: 40%;
   }
 }
 .page .page-content .home-view {
@@ -1002,6 +1002,99 @@
   .page .page-content .home-view .section-four .container .process-footer a {
     margin-top: 30px;
     width: 60%;
+  }
+}
+.page .page-content .about-view .container {
+  padding: 30px;
+}
+.page .page-content .about-view .container .about-heading {
+  padding: 30px;
+  border-left: 4px solid #ffc600;
+  width: 80%;
+  margin-bottom: 20px;
+}
+.page .page-content .about-view .container .about-heading h6 {
+  margin-bottom: 20px;
+  color: #2B2A2F;
+  text-transform: capitalize;
+}
+.page .page-content .about-view .container .about-heading h6::after {
+  content: "";
+  display: block;
+  width: 5%;
+  border: 1px dashed #95a5a6;
+}
+.page .page-content .about-view .container .about-heading h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  color: #2e2d33;
+  font-size: 2.1em;
+}
+.page .page-content .about-view .container h3.staff-word {
+  margin: 50px 0;
+  color: #2e2d33;
+}
+.page .page-content .about-view .container h3.staff-word::after {
+  content: "";
+  background-color: #ffc600;
+  height: 1px;
+  width: 5%;
+  display: block;
+}
+.page .page-content .about-view .container .team-desc {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page .page-content .about-view .container .team-desc .element img {
+  width: 40%;
+  display: block;
+  margin-left: 20%;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+.page .page-content .about-view .container .team-desc .element h3 {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-weight: 900;
+  font-size: 1.1em;
+  color: #2e2d33;
+}
+.page .page-content .about-view .container .team-desc .element .box {
+  padding: 15px 10px;
+  background-color: #efefef;
+  width: 80%;
+  line-height: 2;
+}
+.page .page-content .about-view .container .team-desc .element .box p {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #2B2A2F;
+}
+
+@media screen and (max-width: 768px) {
+  .page .page-content .about-view .container .about-heading {
+    width: 100%;
+  }
+  .page .page-content .about-view .container .about-heading h1 {
+    font-size: 1.1em;
+  }
+  .page .page-content .about-view .container .team-desc {
+    display: block;
+  }
+  .page .page-content .about-view .container .team-desc .element {
+    margin-bottom: 50px;
+  }
+  .page .page-content .about-view .container .team-desc .element img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page .page-content .about-view .container .team-desc .element .box {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
