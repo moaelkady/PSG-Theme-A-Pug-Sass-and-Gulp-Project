@@ -298,6 +298,25 @@
           .process-desc {
             display: flex;
             .element {
+              &::after {
+                float: right;
+                margin-top: 8px;
+                font-weight: 600;
+                color: $flatDark;
+              }
+            }
+            .element:nth-child(1),
+            .element:nth-child(2) {
+              &::after {
+                content: " \25B7";
+              }
+            }
+            .element:nth-child(3) {
+              &::after {
+                content: " \2714";
+              }
+            }
+            .element {
               margin-right: 15px;
               flex: 1;
 
@@ -346,9 +365,35 @@
             }
           }
           .process-footer {
+            margin-top: 50px;
+            p,
+            a {
+              display: inline-block;
+              margin-right: 20px;
+              text-transform: capitalize;
+            }
             p {
+              font-size: 1em;
+              font-weight: 600;
+              color: $flatBlackLight;
             }
             a {
+              color: $flatWhite;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-size: 0.9em;
+              width: 20%;
+              background-color: $primary;
+              padding: 15px;
+              border-radius: 5px;
+              i{
+                margin-left: 10px;
+                font-size: 1.1em;
+              }
+              &:hover {
+                background-color: #fdd23d;
+                letter-spacing: 2px;
+              }
             }
           }
         }
