@@ -17,5 +17,7 @@ html {
 .clear-float {
     clear: both;
 }
-
+.primary {
+    color: $primary;
+}
 @media screen and (max-width: 768px) {}
