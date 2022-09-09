@@ -20,4 +20,25 @@ html {
 .primary {
     color: $primary;
 }
+//scroll bar custom
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $flatBlack; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $primary; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $primaryAlt; 
+  }
+  
 @media screen and (max-width: 768px) {}
