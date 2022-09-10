@@ -1421,4 +1421,218 @@
     font-size: 1.5em;
   }
 }
+.page .page-content .contact-view .container .contact-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  color: #ffffff;
+  margin-bottom: 70px;
+}
+.page .page-content .contact-view .container .contact-header .div-left .float-word span {
+  position: absolute;
+  bottom: -80px;
+  left: -23px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 4em;
+  color: rgba(255, 255, 255, 0.1411764706);
+  letter-spacing: 5px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  z-index: 1;
+}
+.page .page-content .contact-view .container .contact-header .div-left .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 30px;
+  background-color: #2e2d33;
+  width: 40%;
+  white-space: nowrap;
+  height: 450px;
+}
+.page .page-content .contact-view .container .contact-header .div-left .content h1 {
+  text-transform: uppercase;
+  margin: 10%;
+  font-weight: 900;
+  font-size: 2.5em;
+  letter-spacing: -1px;
+}
+.page .page-content .contact-view .container .contact-header .div-left .content h1::before {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.1411764706);
+  margin-bottom: 15px;
+}
+.page .page-content .contact-view .container .contact-header .div-left .content h1::after {
+  content: "";
+  display: block;
+  width: 18%;
+  height: 0px;
+  border: 0.5px solid rgba(255, 255, 255, 0.1411764706);
+  margin-top: 15px;
+}
+.page .page-content .contact-view .container .contact-header .div-left .content p {
+  margin: 10%;
+  font-size: 1em;
+  line-height: 1.9;
+  font-weight: 400;
+}
+.page .page-content .contact-view .container .contact-header .div-right {
+  width: 100%;
+  height: 400px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(9, 3, 19, 0.658)), to(rgba(0, 0, 0, 0.6))), url(../src/facts.jpg);
+  background: linear-gradient(90deg, rgba(9, 3, 19, 0.658), rgba(0, 0, 0, 0.6)), url(../src/facts.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.page .page-content .contact-view .container .contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page .page-content .contact-view .container .contact-details .details-heading {
+  width: 30%;
+  padding: 10px;
+  background-color: rgba(54, 53, 59, 0.062745098);
+  margin: 30px 20px;
+  border-left: 5px solid #ffc600;
+}
+.page .page-content .contact-view .container .contact-details .details-heading h1 {
+  text-transform: capitalize;
+  font-size: 1.5em;
+  margin-bottom: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #2E2D33;
+}
+.page .page-content .contact-view .container .contact-details .details-heading p {
+  font-size: 1em;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #66656a;
+}
+.page .page-content .contact-view .container .contact-details .details-desc {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(54, 53, 59, 0.062745098);
+  padding: 10px;
+  margin: 30px 20px;
+}
+.page .page-content .contact-view .container .contact-details .details-desc .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33.33%;
+}
+.page .page-content .contact-view .container .contact-details .details-desc .box .icon {
+  font-size: 2em;
+  margin: 5px;
+  color: #2E2D33;
+}
+.page .page-content .contact-view .container .contact-details .details-desc .box .icon i {
+  margin-top: 10px;
+}
+.page .page-content .contact-view .container .contact-details .details-desc .box .details {
+  margin-left: 10%;
+}
+.page .page-content .contact-view .container .contact-details .details-desc .box .details h3 {
+  color: #2B2A2F;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.page .page-content .contact-view .container .contact-details .details-desc .box .details h3::after {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 2px;
+  background-color: #ffc600;
+  margin-top: 5px;
+}
+.page .page-content .contact-view .container .contact-details .details-desc .box .details p {
+  color: #66656a;
+  text-transform: capitalize;
+}
+.page .page-content .contact-view .container .form-header h2 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: -25px;
+  color: #2E2D33;
+}
+.page .page-content .contact-view .container .form-header h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  margin-top: 20px;
+  height: 2px;
+  background-color: #ffc600;
+  margin: auto;
+}
+.page .page-content .contact-view .container .contact-form {
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: 50px 30px;
+}
+.page .page-content .contact-view .container .contact-form form {
+  text-transform: capitalize;
+}
+.page .page-content .contact-view .container .contact-form form .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page .page-content .contact-view .container .contact-form form .form-row input {
+  width: 50%;
+  margin: 10px;
+  padding: 15px;
+  letter-spacing: 1px;
+  color: #66656a;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.page .page-content .contact-view .container .contact-form form .form-row input:focus-visible {
+  outline: #2980b9 auto 1px;
+}
+.page .page-content .contact-view .container .contact-form form .form-row textarea {
+  width: 100%;
+  margin: 10px;
+  padding: 15px;
+  height: 270px;
+  letter-spacing: 1px;
+  color: #66656a;
+}
+.page .page-content .contact-view .container .contact-form form .form-row textarea:focus-visible {
+  outline: #2980b9 auto 1px;
+}
+.page .page-content .contact-view .container .contact-form form .form-submit {
+  text-align: center;
+  margin-top: 10px;
+}
+.page .page-content .contact-view .container .contact-form form .form-submit input {
+  font-size: 0.9em;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  background-color: #ffc600;
+  color: #ffffff;
+  padding: 15px 30px;
+  letter-spacing: 2px;
+  -webkit-box-shadow: inset 0 0 0 0 #ffc600;
+          box-shadow: inset 0 0 0 0 #ffc600;
+  -webkit-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.page .page-content .contact-view .container .contact-form form .form-submit input:hover {
+  -webkit-box-shadow: inset 400px 0 0 0 #fdd23d;
+          box-shadow: inset 400px 0 0 0 #fdd23d;
+}
 /*# sourceMappingURL=main.css.map */
