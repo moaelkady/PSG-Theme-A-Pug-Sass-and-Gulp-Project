@@ -40,6 +40,7 @@
     &:hover {
       transform: scale(1.1);
     }
+
   }
 
   &__caption {
@@ -60,6 +61,21 @@
     transition: 0.3s;
   }
 }
+
+.gallery__link:hover {
+  .gallery__caption {
+    top: 10%;
+    padding: 5px 1px;
+    &::after {
+      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores temporibus nam.";
+      display: block;
+      position: absolute;
+      top: 25%;
+      margin-left: 10px;
+    }
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .page {
