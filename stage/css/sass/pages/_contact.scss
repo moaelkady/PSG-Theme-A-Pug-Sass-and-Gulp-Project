@@ -110,6 +110,7 @@
             background-color: $ultraLightBG;
             padding: 10px;
             margin: 30px 20px;
+            word-break: break-all;
             .box {
               display: flex;
               width: 33.33%;
@@ -144,6 +145,7 @@
             }
           }
         }
+
         .form-header {
           h2 {
             text-align: center;
@@ -170,15 +172,27 @@
             text-transform: capitalize;
             .form-row {
               display: flex;
-              input {
-                width: 50%;
-                margin: 10px;
-                padding: 15px;
-                letter-spacing: 1px;
-                color: $flatBlackLight;
-                transition: 0.3s ease;
-                &:focus-visible {
-                  outline: $flatBlueAlt auto 1px;
+              .input-group {
+                width: calc(100% - 14px);
+                position: relative;
+                margin-right: 11px;
+                i {
+                  position: absolute;
+                  font-size: 1.7em;
+                  color: $primary;
+                  top: 20px;
+                  left: 20px;
+                }
+                input {
+                  width: 100%;
+                  margin: 10px;
+                  padding: 15px 15px 15px 45px;
+                  letter-spacing: 1px;
+                  color: $flatBlackLight;
+                  transition: 0.3s ease;
+                  &:focus-visible {
+                    outline: $flatBlueAlt auto 1px;
+                  }
                 }
               }
               textarea {
@@ -194,8 +208,8 @@
               }
             }
             .form-submit {
-                text-align: center;
-                margin-top: 10px;
+              text-align: center;
+              margin-top: 10px;
               input {
                 font-size: 0.9em;
                 font-weight: 400;
@@ -208,12 +222,66 @@
                 box-shadow: inset 0 0 0 0 $primary;
                 transition: ease-out 0.4s;
                 &:hover {
-                    box-shadow: inset 400px 0 0 0 $primaryAlt;
+                  box-shadow: inset 400px 0 0 0 $primaryAlt;
                 }
               }
             }
           }
         }
+      }
+    }
+  }
+}
+
+//for small screens
+@media screen and (max-width: 768px) {
+  .page
+    .page-content
+    .contact-view
+    .container
+    .contact-header
+    .div-left
+    .content {
+    white-space: unset;
+    p {
+      font-size: 0.9em;
+    }
+  }
+  .page .page-content .contact-view .container .contact-details {
+    display: block;
+    .details-heading {
+      width: calc(100% - 30px);
+    }
+    .details-desc {
+      display: block;
+      width: calc(100% - 30px);
+      .box {
+        width: 100%;
+        .icon {
+          flex: 1;
+          text-align: center;
+          align-items: center;
+          align-content: center;
+          i {
+          }
+        }
+        .details {
+          margin-bottom: 20px;
+          flex: 10;
+          h3 {
+            margin-bottom: 10px;
+          }
+          p {
+          }
+        }
+      }
+    }
+  }
+  .page .page-content .contact-view .container .contact-form {
+    width: 100%;
+    form {
+      .form-row {
+        display: block;
       }
     }
   }

@@ -6,7 +6,7 @@
                     span contact
                 .content 
                     h1 <span class='primary'>Contact</span> us 
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio<br> exercitationem libero sapiente et consectetur quidem.
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit Tenetur distinctio.
             .div-right
                 .img 
                     .bgimg
@@ -39,12 +39,21 @@
         .contact-form 
             form(action='' method='')
                 .form-row
-                    input(type='text', name='username', placeholder='Your Name *')
-                    input(type='email', name='email', placeholder='Your Email *')
+                    .input-group
+                        <i class="fa fa-user"></i>
+                        input(type='text', name='username', placeholder='Your Name *')
+                    .input-group
+                        <i class="fa fa-envelope"></i>
+                        input(type='email', name='email', placeholder='Your Email *')
                 .form-row
-                    input(type='number', name='phone', placeholder='Phone Number *')
-                    input(type='text', name='subject', placeholder='Subject *')
+                    .input-group 
+                        <i class="fa fa-phone"></i>
+                        input(type='number', name='phone', placeholder='Phone Number *')
+                    .input-group
+                        <i class="fa fa-bars"></i>
+                        input(type='text', name='subject', placeholder='Subject *')
                 .form-row 
-                    textarea(name="msg", placeholder='Your Message...')
+                    .input-group
+                        textarea(name="msg", placeholder='Your Message...')
                 .form-submit 
                     input(type="submit", value='Send Message') 
