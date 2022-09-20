@@ -78,10 +78,13 @@
         }
       }
       .bars-x {
+        position: relative;
         top: -45px;
         .bar {
             width: 55px!important;
-            margin-bottom: 0;
+            position: absolute;
+            top: 0;
+            right: 8px;
         }
         .bar:first-child {
             transform: rotateZ(45deg);

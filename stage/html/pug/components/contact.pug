@@ -1,0 +1,59 @@
+.contact-view 
+    .container 
+        .contact-header 
+            .div-left
+                .float-word 
+                    span contact
+                .content 
+                    h1 <span class='primary'>Contact</span> us 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit Tenetur distinctio.
+            .div-right
+                .img 
+                    .bgimg
+
+        .contact-details 
+            .details-heading
+                h1 contact details 
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ducimus? Sed minima laborum.
+            .details-desc 
+                .box 
+                    .icon 
+                        <i class="fa fa-mobile"></i>
+                    .details 
+                        h3 01. phone
+                        p +20123456789
+                .box 
+                    .icon 
+                        <i class="fa fa-location-arrow"></i>
+                    .details 
+                        h3 02. location
+                        p add city country
+                .box 
+                    .icon 
+                        <i class="fa fa-envelope"></i>
+                    .details 
+                        h3 03. email
+                        p admin@wedev.com
+        .form-header 
+            h2 Send Message 
+        .contact-form 
+            form(action='' method='')
+                .form-row
+                    .input-group
+                        <i class="fa fa-user"></i>
+                        input(type='text', name='username', placeholder='Your Name *')
+                    .input-group
+                        <i class="fa fa-envelope"></i>
+                        input(type='email', name='email', placeholder='Your Email *')
+                .form-row
+                    .input-group 
+                        <i class="fa fa-phone"></i>
+                        input(type='number', name='phone', placeholder='Phone Number *')
+                    .input-group
+                        <i class="fa fa-bars"></i>
+                        input(type='text', name='subject', placeholder='Subject *')
+                .form-row 
+                    .input-group
+                        textarea(name="msg", placeholder='Your Message...')
+                .form-submit 
+                    input(type="submit", value='Send Message') 

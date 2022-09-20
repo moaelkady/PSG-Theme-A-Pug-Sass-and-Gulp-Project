@@ -46,4 +46,5 @@ $('a[href*="#"]:not([href="#"])').click(function () {
   }
 });
 
-const myMap = new Map;
+//portfolio functions
+

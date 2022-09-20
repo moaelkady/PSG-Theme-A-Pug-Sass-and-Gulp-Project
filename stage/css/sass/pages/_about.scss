@@ -1,0 +1,115 @@
+.page {
+  .page-content {
+    .about-view {
+      .container {
+        padding: 30px;
+        .about-heading {
+          padding: 30px;
+          border-left: 4px solid $primary;
+          width: 80%;
+          margin-bottom: 20px;
+          h6 {
+            margin-bottom: 20px;
+            color: $flatBlack;
+            text-transform: capitalize;
+            &::after {
+              content: "";
+              display: block;
+              width: 5%;
+              border: 1px dashed $flatGrayAlt;
+            }
+          }
+          h1 {
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+            color: $flatDark;
+            font-size: 2.1em;
+          }
+        }
+        h3.staff-word {
+          margin: 50px 0;
+          color: $flatDark;
+          &::after {
+            content: "";
+            background-color: $primary;
+            height: 1px;
+            width: 5%;
+            display: block;
+          }
+        }
+        .team-desc {
+          width: 100%;
+          display: flex;
+          .element {
+            img {
+              width: 40%;
+              display: block;
+              margin-left: 20%;
+              border-radius: 50%;
+              margin-bottom: 50px;
+            }
+            h3 {
+              margin-bottom: 20px;
+              text-transform: capitalize;
+              letter-spacing: 3px;
+              font-weight: 900;
+              font-size: 1.1em;
+              color: $flatDark;
+            }
+            .box {
+              padding: 15px 10px;
+              background-color: $flatDarkWhite;
+              width: 80%;
+              line-height: 2;
+              p {
+                font-size: 0.9em;
+                font-weight: 600;
+                color: $flatBlack;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    .page-content {
+      .about-view {
+        .container {
+          .about-heading {
+            width: 100%;
+            h6 {
+            }
+            h1 {
+              font-size: 1.1em;
+            }
+          }
+          h1 {
+          }
+          .team-desc {
+            display: block;
+            .element {
+              margin-bottom: 50px;
+              img {
+                margin-left: auto;
+                margin-right: auto;
+              }
+              h3 {
+              }
+              .box {
+                width: 100%;
+                p {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
