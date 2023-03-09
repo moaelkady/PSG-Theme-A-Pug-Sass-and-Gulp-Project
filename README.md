@@ -4,12 +4,12 @@ PSG-Theme is a customizable and responsive theme that can be used for any compan
 ## Getting Started
 To get started with PSG-Theme, clone the repository to your local machine. Then, navigate to the project directory and run npm install to install the necessary dependencies. Once the dependencies have been installed, run gulp to compile the SASS and Pug files and start the development server.
 
-`
-. git clone https://github.com/moaelkady/PSG-Theme-A-Pug-Sass-and-Gulp-Project.git
-. cd PSG-Theme: A Pug, Sass, and Gulp Project
-. npm install
-. gulp
-`
+```
+ git clone https://github.com/moaelkady/PSG-Theme-A-Pug-Sass-and-Gulp-Project.git
+ cd PSG-Theme: A Pug, Sass, and Gulp Project
+ npm install
+ gulp
+```
 
 ## Customization
 PSG-Theme is designed to be easy to customize. 
