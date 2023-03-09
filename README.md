@@ -1,6 +1,9 @@
 # PSG-Theme: A Pug, Sass, and Gulp Project
 PSG-Theme is a customizable and responsive theme that can be used for any company website. It is built using SASS, Pug, and Gulp, making it easy to edit and maintain.
 
+## Try it
+You can try it live [HERE](https://goldentheme-55bba.web.app/)
+
 ## Getting Started
 To get started with PSG-Theme, clone the repository to your local machine. Then, navigate to the project directory and run npm install to install the necessary dependencies. Once the dependencies have been installed, run gulp to compile the SASS and Pug files and start the development server.
 
